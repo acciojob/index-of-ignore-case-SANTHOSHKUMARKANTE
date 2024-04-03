@@ -4,7 +4,10 @@ function indexOfIgnoreCase(s1, s2) {
     let lowerSubStr = subStr.toLowerCase();
 
     // Use indexOf to find the index of the substring
-    return lowerStr.indexOf(lowerSubStr);
+	if (lowerStr.indexOf(lowerSubStr)>=0) {
+		return lowerStr.indexOf(lowerSubStr);
+	}
+    return-1;
 }
 
 Please do not change the code below
